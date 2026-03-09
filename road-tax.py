@@ -7,14 +7,16 @@
 """
 
 cost = input("Enter the cost price of the bike: ")
-
 cost = float(cost)
 
-if cost > 100000:
-    cost = cost + (cost * 0.15)
-elif cost > 50000 and cost <= 100000:
-    cost = cost + (cost * 0.10)
-else:
-    cost = cost + (cost * 0.05)
+percentage = 0
+percentage = float(percentage)
 
-print("Road tax to be paid: ", cost)
+if cost > 100000:
+    percentage = cost * 0.15
+elif cost > 50000 and cost <= 100000:
+    percentage = cost * 0.10
+else:
+    percentage = cost * 0.05
+
+print("Road tax to be paid: ", percentage)
